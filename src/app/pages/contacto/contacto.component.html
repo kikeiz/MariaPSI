@@ -1,0 +1,70 @@
+<div class="all">
+    <div *ngIf="!showQuestions">
+        <div class="p-fluid center">
+            <p id="contacta" class="tittle">
+                Contacta conmigo!
+            </p>
+        </div>
+        <div>
+            <p class="text">
+               Como tú, muchas personas antes han tenido dudas sobre sí pedir o no ayuda profesional. Para resolverlas, te dejo a continuación las respuestas a algunas de las <b>preguntas más frecuentes</b> antes de acudir a terapia.
+            </p>
+        </div>
+        <div class="center">
+            <button (click)="showQuestions = true" class="btn-3 button"><span>Preguntas Frecuentes</span></button>
+        </div>
+        <div>
+            <p class="text">
+                Para reservar una primera cita o si tienes alguna duda sobre tu caso en particular o el funcionamiento de las sesiones, contacta conmigo sin ningún compromiso en el siguiente formulario o escribeme a <b>info@mariaalejopsicologia.com</b>
+            </p>
+        </div>
+        <div class="p-fluid center">
+            <div class="p-field">
+                <label for="name">Nombre</label>
+                <input id="name" type="text" pInputText> 
+            </div>
+            <div class="p-field">
+                <label for="email">Email</label>
+                <input id="email" type="text" pInputText> 
+            </div>
+            <div class="p-field">
+                <label for="cellphone">Telefono</label>
+                <input id="cellphone" type="text" pInputText> 
+            </div>
+            <div class="p-field">
+                <label for="message">Mensaje</label>
+                <!-- <input id="message" type="text" pInputText>  -->
+                <textarea id="message" type="text" pInputTextarea></textarea>
+        
+            </div>
+        </div>
+        <div class="center checkbox">
+            <p-checkbox name="groupname" value="val1" (onChange)="checked = $event.checked" label="He leído y acepto el Aviso Legal y la Política de Privacidad"></p-checkbox>
+        </div>
+        <div class="center top">
+            <button [disabled]="!checked" pButton type="button" label="Enviar"></button>
+        </div>
+                
+        <div class="container_map" data-aos="fade-down">
+            <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+                <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+        </div>
+        
+        <div class="center"><b>
+            C/ Gaztambide, 68, Planta 3ª, 3ºA. 28010 (Madrid) 
+        </b></div>
+        
+        <div class="center">
+            <fa-icon [icon]="faEnvelope" size="1.5x"> </fa-icon>
+            <p class="email">info@mariaalejopsicologia.com</p>
+        </div>     
+    </div>
+
+    <div *ngIf="showQuestions">
+        <app-preguntas-frecuentes></app-preguntas-frecuentes>
+        <div class="center down_button">
+            <button (click)="showQuestions = false" class="btn-3 button"><span>Contacta</span></button>
+        </div>
+    </div>
+</div>

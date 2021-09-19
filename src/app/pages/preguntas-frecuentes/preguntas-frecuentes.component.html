@@ -1,0 +1,23 @@
+
+<div class="p-fluid center">
+    <p id="contacta" class="green">
+        Preguntas frecuentes
+    </p>
+</div>
+<div class="center">
+    <p class="text">
+        Las dudas y miedos son normales, forman parte del proceso natural de todas las personas previo a resolver sus problemas. Pero si estás aquí, estás dando el primer paso para poner punto final a tus dudas y ponerte de nuevo al timón de tu vida!
+    </p>
+</div>
+<div class="container" data-aos="fade-down">
+    <div *ngFor="let question of questions">
+        <p-fieldset  [ngClass]="{'focus': (question.active)}" (onBeforeToggle)="toggle($event.collapsed, question)" [toggleable]="true" collapsed="true">
+            <ng-template pTemplate="header">{{question.question}}</ng-template>
+            <p [innerHTML]="question.answer"></p>
+        </p-fieldset>
+    </div>
+</div>
+
+
+
+

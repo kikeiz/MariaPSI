@@ -1,0 +1,52 @@
+
+<div class="all">
+    <div class="c">
+    <div class="center">
+        <p class="tittle">
+            Enfoque Integrador
+        </p>
+    </div>    
+    <div class="center">
+        <p class="margin">
+            Durante la terapia, utilizo un <b>enfoque integrador</b>, con el que busco responder de forma específica a las necesidades de cada persona, interviniendo en el plano emocional, conductual, cognitivo y físico. 
+        </p>
+    </div>
+    <div>
+        <p class="margin">
+            Se trata de un tipo de abordaje, en el que se reúnen elementos de distintas terapias específicas para poder intervenir. El objetivo es poder ofrecerte la ayuda que necesitas, desde el enfoque y a partir de las técnicas que más se ajusten a tus necesidades, según tu personalidad y el tipo de dificultad que manifiestes.
+        </p>
+    </div>
+    <div>
+        <p class="margin">
+            Estas son algunas de las <b>terapias</b> con las que trabajo, dependiendo de las dificulades que presenta cada paciente:
+        </p>
+    </div>
+    
+    <div class="container" data-aos="fade-down">
+        <div *ngFor="let i = index; let therapy of therapies" class="c-card c-{{i}}">
+                <p-card [style]="{width: '300px', height: '400px'}">
+                    <b>{{therapy.name}}</b>
+                </p-card>
+        </div>
+    </div>
+</div>
+
+<div class="center">
+    <p class="margin">
+        La aplicación de las terapias depende siempre del paciente y de las <b>áreas de intervención</b> sobre las que estemos trabajando en cada momento. Éstas son algunas de ellas:
+    </p>
+</div>
+
+<div class="container" data-aos="fade-down">
+    <div *ngFor="let j = index; let service of services" class="services">
+        <p-panel collapsed="true" [toggleable]="true" header="{{service.title}}" [ngClass]="{'focus': (service.active)}" (onBeforeToggle)="toggle($event.collapsed, service)">
+            <p [innerHTML]="service.content"></p>
+        </p-panel>
+    </div>
+</div>
+
+<div class="metodologia">
+    &nbsp;
+</div>
+</div>
+

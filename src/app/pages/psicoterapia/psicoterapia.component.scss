@@ -1,0 +1,129 @@
+.c-card{
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 35px;
+}
+
+::ng-deep .p-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: rgb(196,186,167)
+}
+
+.c-0{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/soluciones.jpeg');
+    }
+}
+
+.c-1{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/cognitivo-conductual.jpeg');
+    }
+}
+
+.c-2{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/mindfulness.jpeg');
+    }
+}
+
+.c-3{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/emdr.jpeg');
+    }
+}
+.c-4{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/emotions.jpeg');
+    }
+}
+.c-5{
+    ::ng-deep .p-card{
+        background-image: url('../../../assets/Images/psicoanalisis.jpeg');
+    }
+}
+
+
+
+::ng-deep .p-card:hover{
+    transform: scale(0.95);
+    ::ng-deep .p-card .p-card-content{
+        border-style: none;
+    }
+}
+
+.top-img:hover{
+    background-color: rgb(227,222,213, 0.5);
+}
+
+
+
+::ng-deep .p-card .p-card-content{
+    background-color: rgb(227,222,213, 0.5);
+    display: flex;
+    justify-content: center;
+    color: #342e23;
+    border-color: #342e23;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 53%;
+    height: 65px;
+    text-align: center;
+}
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.c{
+    margin-bottom: 30px;
+}
+
+.tittle{
+    padding-top: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.margin{
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 23px;
+}
+
+::ng-deep .p-panel.p-panel-toggleable .p-panel-header {
+    width: 500px;
+}
+
+::ng-deep .p-panel .p-panel-content {
+    width: 500px;
+}
+
+.services{
+    padding: 30px;
+}
+
+::ng-deep .p-panel.p-panel-toggleable .p-panel-header {
+    background: rgb(227,222,213, 0.3);
+}
+
+.focus{
+    ::ng-deep .p-panel.p-panel-toggleable .p-panel-header {
+        background: rgb(227,222,213);
+        border-color: #88857f;
+
+    }
+}
+::ng-deep .p-panel .p-panel-header .p-panel-header-icon:focus {
+    box-shadow: none !important;
+}
+
+::ng-deep .p-panel .p-panel-content {
+    background: rgb(213,227,222, 0.2);
+}

@@ -1,0 +1,253 @@
+.p-field{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.p-fluid{
+    flex-direction: column;
+}
+
+
+div div input, div div textarea{
+    border-radius: 0px;
+    // background-color:  rgb(233, 236, 239, 0.7);
+    // border-style: solid rgb(233, 236, 239, 1) 1px;
+    background-color: rgb(213,227,222, 0.3);
+    border-style: solid #74954b 1px;
+    height: 50px;
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+#contacta{
+    font-size: 40px;
+    padding-top: 200px;
+}
+
+
+.juntos{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#solution{
+    font-style: oblique;
+}
+
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#message{
+    height: 100px;
+}
+
+div div label{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    box-shadow: none !important;
+}
+
+.checkbox{
+    width: 50%;
+    margin: auto;
+    p-checkbox{
+        margin-top: 10px;
+
+    }
+}
+
+.link{
+    color: blue;
+    cursor: pointer;
+}
+
+.legalAdvice{
+    display: contents;
+}
+
+.message{
+    display: flex;
+}
+
+.top{
+    margin-top: 20px;
+}
+
+button{
+    background-color: #5a5855;
+    border-style: none;
+}
+
+::ng-deep .p-button:enabled:hover{
+    background: #c4baa7;
+}
+
+agm-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 400px;
+ }
+
+.container_map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 90%;
+    height: 500px;
+    background: -webkit-linear-gradient(45deg, white, white,  rgb(227,213,218, 0.1), rgb(227,213,218, 0.2), rgb(227,213,218, 0.2), rgb(227,213,218, 0.2), rgb(227,213,218, 0.1), white, white);
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right: auto;
+
+    // background-color: rgb(150,73,3,0.3);
+
+}
+
+.email{
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+}
+
+.center{
+    b{
+        text-align: center;
+    }
+
+}
+
+.center p{
+    margin-left: 8px;
+}
+
+.center b{
+    margin-top: 30px;
+}
+
+.p-field{
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    .p-field{
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .p-field{
+        width: 70%;
+    }
+}
+@media (max-width: 500px) {
+    .p-field{
+        width: 80%;
+    }
+}
+
+.text{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 23px;
+}
+
+::ng-deep .p-checkbox-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top{
+    margin-top: 30px;
+}
+
+
+.button{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: rgb(87,77,58);
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin: 20px 30px;
+    background: rgb(227,222,213);
+  }
+  span{
+    display: block;
+    padding: 18px 25px;
+  }
+  .button::before, .button::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: rgb(196,186,167);
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: rgb(196,186,167);
+  }
+  .button:hover::before, button:hover::after{
+    width: 100%;
+  }
+  .button:hover span::before, button:hover span::after{
+    height: 100%;
+  }
+  .btn-3::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .btn-3 span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .btn-3::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .btn-3 span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  
+  .btn-3:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-3:hover span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-3:hover::before{
+    transition-delay: 0.4s;
+  }
+  .btn-3:hover span::before{
+    transition-delay: 0.6s;
+  }
+  
+
+  .down_button{
+      padding-bottom: 30px;
+  }

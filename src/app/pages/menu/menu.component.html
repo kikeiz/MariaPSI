@@ -1,0 +1,14 @@
+<div class="header color-1" (window:scroll)="onWindowScroll($event)">
+    <div class="menu">
+        <div class="absolute-container">
+            <p-menubar styleClass="m-top" baseZIndex="1"  autoDisplay="true" autoZIndex="true" #menu [model]="items"></p-menubar>
+        </div>
+    </div>
+    <div>
+        <img id="image" class="left" [ngStyle]="{'max-height': height}" routerLink="/"  class="pointer" src="../../../assets/Images/Alejo2.png" alt="">
+    </div>
+</div>
+
+<div class="element">
+</div>
+
