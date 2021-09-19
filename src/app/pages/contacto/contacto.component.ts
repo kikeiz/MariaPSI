@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos'
 
@@ -13,7 +13,8 @@ export class ContactoComponent implements OnInit {
   public options: any;
   public overlays: any;
   public showQuestions: boolean = false
-  
+  @Input() child: boolean = false
+
   lat = 40.43467955
   lng = -3.71490270979186
   zoom = 17;
@@ -25,7 +26,7 @@ export class ContactoComponent implements OnInit {
   faEnvelope = faEnvelope;
 
   ngOnInit(): void {
-    
+        
     this.options = {
       center: {lat: 36.890257, lng: 30.707417},
       zoom: 12

@@ -13,12 +13,12 @@ import { TestimoniosComponent } from './pages/testimonios/testimonios.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'preguntas', component: PreguntasFrecuentesComponent },
-  { path: 'testimonios', component: TestimoniosComponent },
-  { path: 'tarifas', component: TarifasComponent },
-  { path: 'sobremi', component: SobreMiComponent },
-  { path: 'psicoterapia', component: PsicoterapiaComponent },
-  { path: 'contacto', component: ContactoComponent},
+  { path: 'preguntas', component: PreguntasFrecuentesComponent , data: {animation: 'QuestionPage'}},
+  { path: 'testimonios', component: TestimoniosComponent, data: {animation: 'TestimoniosPage'}},
+  { path: 'tarifas', component: TarifasComponent, data: {animation: 'TarifasPage'}},
+  { path: 'sobremi', component: SobreMiComponent, data: {animation: 'AboutMePage'}},
+  { path: 'psicoterapia', component: PsicoterapiaComponent, data: {animation: 'PsychotherapyPage'}},
+  { path: 'contacto', component: ContactoComponent, data: {animation: 'ContactPage'}},
     {
       path: 'avisolegal',
       component: AvisoLegalComponent

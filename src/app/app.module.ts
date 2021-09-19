@@ -66,6 +66,7 @@ import {TabViewModule} from 'primeng/tabview';
    CardModule,
    PanelModule,
    TabViewModule,
+   BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
