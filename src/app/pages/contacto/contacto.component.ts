@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import * as AOS from 'aos'
@@ -19,7 +20,7 @@ export class ContactoComponent implements OnInit {
 
   public checked: boolean = false
 
-  constructor() { }
+  constructor(private scroll: ViewportScroller) { }
 
   faEnvelope = faEnvelope;
 
@@ -33,5 +34,7 @@ export class ContactoComponent implements OnInit {
     AOS.init({duration: 1200})
 
   }
+
+
 
 }

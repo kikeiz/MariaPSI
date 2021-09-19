@@ -47,7 +47,23 @@ export class PsicoterapiaComponent implements OnInit {
     {
       title: "Trastorno de Pánico",
       content: "<p>Si te sientes identificado con algunos de los siguientes síntomas, es posible que estés presentando problemas relacionados con el Trastorno de Pánico:</p><p>Recurrentes ataques de pánico, los cuales se caracterizan por:</p><p> <ul> <li>Miedo intenso o malestar intenso, que alcanza su máxima expresión en pocos minutos.</li> <li>Taquicardia, palpitaciones.</li> <li>Sudoración.</li> <li>Temblor o sacudidas..</li> <li>Dificultad para respirar.</li> <li>Sensación de ahogo.</li> <li>Dolor en el tórax.</li> </ul></p>"
-    }
+    },
+    {
+      title: "Agorafobia",
+      content: "<p>Si te sientes identificado con algunos de los siguientes síntomas, es posible que estés presentando problemas relacionados con la Agorafobia:</p><p>Ansiedad o miedo intenso acerca de algunas de las siguientes situaciones:</p><p> <ul> <li>Miedo o ansiedad intensa en situaciones como el uso del transporte público, en espacios abiertos, en sitios cerrados, al hacer cola o estar en medio de una multitud, al estar fuera de casa solo.</li> <li>Evitación de estas situaciones por miedo a no poder escapar o a no disponer de ayuda si aparecen síntomas de pánico u otros incapacitantes.</li> </ul></p>"
+    },
+    {
+      title: "Fobia Específica",
+      content: "<p>Si te sientes identificado con algunos de los siguientes síntomas, es posible que estés presentando problemas relacionados con una Fobia Específica:</p><p> <ul> <li>Miedo o ansiedad intensa y desproporcionada por un objeto o situación específica (Volar, alturas, tormentas, ascensores, animales, inyecciones, ver sangre).</li> <li>El objeto o situación se evita o resiste de manera activa.</li> </ul></p>"
+    },
+    {
+      title: "Trastorno de Ansiedad Social",
+      content: "<p>Si te sientes identificado con algunos de los siguientes síntomas, es posible que estés presentando problemas relacionados con el Trastornos de Ansiedad Social:</p><p> <ul> <li>Miedo o ansiedad intensa en una o más situaciones sociales, en las que la persona se siente observado y evaluado por los demás.</li> <li>Miedo a actuar de cierta manera o de mostrar síntomas de ansiedad delante de los demás, por la posibilidad de sentirse humillado, avergonzado y rechazado por los demás.</li> <li>Evitación y rechazo de las situaciones sociales.</li> </ul></p>"
+    },
+    {
+      title: "Trastorno Obsesivo Compulsivo",
+      content: "<p>Si te sientes identificado con algunos de los siguientes síntomas, es posible que estés presentando problemas relacionados con el Trastorno Obsesivo-Compulsivo:</p><p> <ul> <li>Presencia de obsesiones: pensamientos, imágenes o impulsos recurrentes, no deseados y que causan mucha ansiedad y malestar. La persona intenta ignorarlos o suprimirlos con otros pensamientos o actos.</li> <li>Presencia de compulsiones: comportamientos o actos mentales repetitivos que la persona realiza para calmar el pensamiento obsesivo. Se realizan para prevenir o disminuir la ansiedad, o para evitar algún suceso temido.</li> <li>Las obsesiones y compulsiones requieren mucho tiempo y causan mucho malestar.</li> </ul></p>"
+    },
   ]
 
   ngOnInit(): void {

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import {TabMenuModule} from 'primeng/tabmenu';
-import {MenuItem} from 'primeng/api';
 import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 import { PsicoterapiaComponent } from './pages/psicoterapia/psicoterapia.component';
 import { TarifasComponent } from './pages/tarifas/tarifas.component';
@@ -29,6 +28,7 @@ import {FieldsetModule} from 'primeng/fieldset';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
+import {TabViewModule} from 'primeng/tabview';
 
 
 @NgModule({
@@ -64,7 +64,8 @@ import {PanelModule} from 'primeng/panel';
    FieldsetModule,
    BrowserAnimationsModule,
    CardModule,
-   PanelModule
+   PanelModule,
+   TabViewModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

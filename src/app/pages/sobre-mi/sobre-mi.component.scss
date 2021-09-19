@@ -1,0 +1,38 @@
+.top{
+    padding-top: 200px;
+}
+
+::ng-deep .p-tabview .p-tabview-panels {
+    background: rgba(213, 227, 222, 0.2);
+}
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    box-shadow: none !important;
+    background: rgb(237,234,228);
+}
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link:active {
+    color: black;
+}
+
+.container{
+    width: 96%;
+    margin: auto;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: rgb(123,108,82);
+    border-color: rgb(123,108,82);
+}
+
+::ng-deep .p-tabview .p-tabview-nav {
+    background: rgb(237,234,228)
+}
+
+p, li{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 23px;
+}
+

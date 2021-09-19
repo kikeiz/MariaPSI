@@ -64,7 +64,7 @@
     <div *ngIf="showQuestions">
         <app-preguntas-frecuentes></app-preguntas-frecuentes>
         <div class="center down_button">
-            <button (click)="showQuestions = false" class="btn-3 button"><span>Contacta</span></button>
+            <button (click)="showQuestions = false; scroll.scrollToPosition([0,0]);" class="btn-3 button"><span>Contacta</span></button>
         </div>
     </div>
 </div>
