@@ -1,5 +1,5 @@
 .top{
-    padding-top: 200px;
+    padding-top: 250px;
 }
 
 ::ng-deep .p-tabview .p-tabview-panels {
@@ -108,11 +108,19 @@ p-tabPanel div{
 .C{
     color: rgb(167,196,186);
     font-weight: 600;
+    margin-top: 15px;
+}
+.D{
+    margin-top: 55px;
+    line-height: 30px;
+
 }
 
 .G{
     color: rgb(146,129,98);
     font-size: 25px;
+    margin-top: 15px;
+
 }
 
 @media (max-width: 800px) {
