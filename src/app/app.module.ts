@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
 import {TabViewModule} from 'primeng/tabview';
+import {TableModule} from 'primeng/table';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import {TabViewModule} from 'primeng/tabview';
    CardModule,
    PanelModule,
    TabViewModule,
-   BrowserAnimationsModule
+   BrowserAnimationsModule,
+   TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
