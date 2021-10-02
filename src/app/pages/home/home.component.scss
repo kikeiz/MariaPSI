@@ -7,8 +7,18 @@ img{
     position: fixed;
 }
 
-.container{
-    background-image: url('../../../assets/Images/home.jpeg');
-    height: 200px;
-    background-repeat: no-repeat;
+.main{
+    background: url('../../../assets/Images/home_img1.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // z-index: 2;
+}
+
+.content{
+    height: 1000px;
+    background-color: rgb(247,246,244);
+    margin-top: 400px;
+    z-index: 0;
 }
