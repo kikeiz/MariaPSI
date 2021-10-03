@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { HostListener } from '@angular/core';
 import { ScrollService } from 'src/app/services/scroll.service';
@@ -13,14 +13,21 @@ import { ScrollService } from 'src/app/services/scroll.service';
 export class MenuComponent implements OnInit {
 
   constructor(private scrollService: ScrollService) { }
+  
 
   public color: string = 'color-1'
   public height: string = '150px'
   public display: boolean = true
+  public noHeaderMovement:boolean = false
+
+
   @HostListener('window:scroll', ['$event'])
   items: MenuItem[];
 
   ngOnInit() {    
+    this.scrollService._homeComponent.subscribe((event: boolean)=>{
+      this.noHeaderMovement = event
+    })
       this.items = [
           {
             label: 'Sobre mí',
@@ -41,20 +48,21 @@ export class MenuComponent implements OnInit {
     if(document.documentElement.scrollTop + document.documentElement.offsetHeight == document.documentElement.scrollHeight + 16)
       this.scrollService.setBottomScroll(true)
       
-    
     let header = document.querySelector('.header') as HTMLElement;
     let element = document.querySelector('.element') as HTMLElement;
     let element2 = document.querySelector('.menu') as HTMLElement;
 
     let height_difference: number = window.pageYOffset - element.clientHeight
 
-
-    if(height_difference === 0){      
+  
+    
+    if(height_difference === 0 || this.noHeaderMovement){      
       header.classList.replace(this.color, 'color-1')
       element2.classList.remove('white')
       this.height = '150px'
       return this.color = 'color-1'
     }
+
 
 
     //COLOR CONTROL
@@ -194,7 +202,6 @@ export class MenuComponent implements OnInit {
     
 
   }
-
 }
 
 

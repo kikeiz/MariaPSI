@@ -1,5 +1,13 @@
+
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+}
+
 .padding-top{
-    padding-top: 160px;
+    padding-top: 560px;
 }
 
 
@@ -8,26 +16,105 @@ img{
 }
 
 .main{
-    background: url('../../../assets/Images/home_img1.jpeg') no-repeat center center fixed;
+    background: url('../../../assets/Images/home3.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    // z-index: 2;
 }
 
 .content{
-    height: 1000px;
     background-color: rgb(247,246,244);
-    margin-top: 400px;
-    z-index: 0;
+    padding-top: 400px;
+    position: relative;
+    border-style: solid none none none;
+    border-color: rgb(52,46,35)
 }
 
 .center{
-    position: relative;
-    top: 100px;
+    .title{
+        position: fixed;
+        top: 200px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        .h1{
+            font-size: 50px;
+            color: rgb(64,56,43)
+        }
+        .h2{
+            font-size: 50px;
+            color: rgb(196,186,167);
+        }
+    }
+}
+
+.cv{
+    position: fixed;
+    top: 323px;
 }
 
 p{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(rgb(76,67,50), 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: rgb(76,67,50);
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.btn {
+    color: rgb(76,67,50);
+    cursor: pointer;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+    @media(min-width: 600px) {
+      margin: 0 1em 2em;
+    }
+    
+    &:hover { text-decoration: none; }
+    
+  }
+
+  .button{
+      position: fixed;
+      top: 340px;
+  }
