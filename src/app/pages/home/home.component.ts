@@ -19,9 +19,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
     const context = canvas.getContext('2d')
     context.beginPath();
-    context.arc(150, 5, 20, 0, Math.PI, false);
+    context.arc(25, 5, 20, 0, Math.PI, false);
     context.closePath();
-    context.lineWidth = 2;
+    context.lineWidth = 1.5;
     context.fillStyle = 'rgb(196,186,167)';
     context.fill();
     context.strokeStyle = 'black';

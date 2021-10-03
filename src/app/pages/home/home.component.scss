@@ -16,7 +16,7 @@ img{
 }
 
 .main{
-    background: url('../../../assets/Images/home3.jpeg') no-repeat center center fixed;
+    background: url('../../../assets/Images/home4.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,6 +44,7 @@ img{
         .h2{
             font-size: 50px;
             color: rgb(196,186,167);
+            margin-left: 8px;
         }
     }
 }
@@ -111,10 +112,24 @@ p{
     }
     
     &:hover { text-decoration: none; }
-    
-  }
 
-  .button{
-      position: fixed;
-      top: 340px;
-  }
+}
+
+.button{
+    position: fixed;
+    top: 340px;
+}
+
+.line{
+background: rgb(87,77,58);
+height: 3px;
+width: 150px;
+position: fixed;
+top: 335px;
+}
+.left{
+    left: 485px;
+}
+.right{
+    left: 685px;
+}
