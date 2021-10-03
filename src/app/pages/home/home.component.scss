@@ -1,4 +1,11 @@
 
+$bg-color: rgb(207,198,182);
+$link-text-color: rgb(52,46,35);
+$button-bg-1: rgb(213,227,222);
+$border-radius: 6px;
+$overlay-color: rgb(52,46,35);
+
+
 * {
   box-sizing: inherit;
   transition-property: all;
@@ -7,13 +14,10 @@
 }
 
 .padding-top{
-    padding-top: 560px;
+    padding-top: 660px;
 }
 
 
-img{
-    position: fixed;
-}
 
 .main{
     background: url('../../../assets/Images/home4.jpeg') no-repeat center center fixed;
@@ -25,10 +29,14 @@ img{
 
 .content{
     background-color: rgb(247,246,244);
-    padding-top: 400px;
+    // padding-top: 400px;
     position: relative;
     border-style: solid none none none;
-    border-color: rgb(52,46,35)
+    border-width: 1px;
+    border-color: rgb(52,46,35);
+    .help{
+        color:rgb(29,119,29)
+    }
 }
 
 .center{
@@ -128,8 +136,152 @@ position: fixed;
 top: 335px;
 }
 .left{
-    left: 485px;
+    margin-right: 210px;
 }
 .right{
-    left: 685px;
+    margin-left:210px;
+}
+
+
+.paragraph{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 23px;
+}
+
+.t{
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(217,210,198);
+}
+
+.full-width{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.child, .young, .adult{
+    width: 400px;
+    margin: 10px;
+    height: 450px;
+    position: relative;
+    .conttext{
+        background-color: rgb(196,186,167, 0.7) !important;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        border-style: solid none none none;
+    }
+}
+
+.t2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(52,46,35);
+    font-size: 20px;
+}
+
+.child{
+    background: url('../../../assets/Images/niño.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.young{
+    background: url('../../../assets/Images/adolescentes.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.adult{
+    background: url('../../../assets/Images/adultos.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.button-effect {
+    padding: 20px 0px; 
+    display: flex;
+    justify-content: center;
+    
+    h2 {
+      font: {
+        family: 'Droid Serif', serif;
+        size: 20px;
+      }
+      margin-bottom: 40px;
+    }
+    
+    a {
+      margin-right: 17px;
+      
+      &:nth-child(2) {
+        background-color: $button-bg-1;
+      }
+    }
+}
+
+
+
+/* button styles !!!YOU NEED THEM 
+!!!ALSO YOU NEED TO ADD FONTWESOME */
+
+.effect {
+text-align: center;
+display: inline-block;
+position: relative;
+text-decoration: none;
+color: $link-text-color;
+text-transform: capitalize;
+font: {
+  family: 'Roboto', sans-serif; /* put your font-family */
+  size: 18px;
+}
+padding: 10px 0px;
+width: 150px;
+border-radius: 1px;
+overflow: hidden;
+}
+
+/* effect-1 styles */
+
+.effect.effect-1 {
+transition: all 0.2s linear 0s;
+background-color: $bg-color;
+border-style: solid;
+border-width: 3px;
+border-color: rgb(52,46,35);
+&:before {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 40px;
+  transition: all 0.2s linear 0s;
+}
+
+&:hover {
+  text-indent: -20px;
+  
+  &:before {
+    opacity: 1;
+    text-indent: 0px;
+  }
+}
+
 }

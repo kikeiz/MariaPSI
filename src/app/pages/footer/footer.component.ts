@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,9 +10,13 @@ import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  public home: boolean = false
+  constructor(private router: Router, private scrollService: ScrollService) { }
 
   ngOnInit(): void {
+    this.scrollService._homeComponent.subscribe((event: boolean)=>{
+      this.home = event
+    })
   }
 
   goTo(to:string){

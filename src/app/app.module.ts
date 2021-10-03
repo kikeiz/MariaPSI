@@ -30,6 +30,7 @@ import {CardModule} from 'primeng/card';
 import {PanelModule} from 'primeng/panel';
 import {TabViewModule} from 'primeng/tabview';
 import {TableModule} from 'primeng/table';
+import {CarouselModule} from 'primeng/carousel';
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import {TableModule} from 'primeng/table';
    PanelModule,
    TabViewModule,
    BrowserAnimationsModule,
-   TableModule
+   TableModule,
+   CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
